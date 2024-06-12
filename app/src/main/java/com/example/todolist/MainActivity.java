@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonAddTask.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {  // Kode dieksekusi ketika tombol "Tambah Tugas" diklik
                 String taskName = editTextTask.getText().toString();
                 if (!taskName.isEmpty()) {
                     Task task = new Task(taskName);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         buttonClearTasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskAdapter.clearTasks();
+                taskAdapter.clearTasks(); // Kode yang dieksekusi ketika tombol "Clear Task" diklik
             }
         });
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) { // Kode dieksekusi ketika sebuah task digeser
                 int position = viewHolder.getAdapterPosition();
                 taskAdapter.removeTask(position);
             }

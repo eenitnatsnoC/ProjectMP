@@ -11,18 +11,14 @@ public class Task {
 
     public String getname() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    } //retrieve the name of the task.
 
     public boolean isDone() {
         return isDone;
-    }
+    } //check if the task is done or not.
 
     public void setDone(boolean done) {
         isDone = done;
-    }
+    } //set the done status for the task
 
 }
