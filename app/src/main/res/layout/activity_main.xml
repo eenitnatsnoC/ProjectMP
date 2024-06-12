@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".MainActivity">
-    
+
     <EditText
         android:id="@+id/editTextTask"
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
         android:layout_height="50dp"
         android:text="Add Task"
         android:textColor="#FFFFFF"
-        android:background="#03A9F4"
+        android:background="#808080"
         android:layout_below="@id/editTextTask"
         android:layout_margin="8dp"
         android:layout_centerHorizontal="true"/>
@@ -35,12 +35,12 @@
     <Button
         android:id="@+id/buttonClearTasks"
         android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:text="Clear All"
         android:textColor="#FFFFFF"
-        android:background="#2196F3"
+        android:background="#808080"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="8dp"/>
+        android:layout_margin="10dp"/>
 
 </RelativeLayout>
