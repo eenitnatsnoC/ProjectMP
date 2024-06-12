@@ -56,12 +56,12 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         notifyItemInserted(tasks.size() - 1);
     }
 
-    public void clearTasks() { //Clears all tasks from the list
+    public void clearTasks() { // Clears all tasks from the list
         tasks.clear();
         notifyDataSetChanged();
     }
 
-    public void removeTask(int position) { //Removes a task from a specific position
+    public void removeTask(int position) { // Removes a task from a specific position
         tasks.remove(position);
         notifyItemRemoved(position);
     }
