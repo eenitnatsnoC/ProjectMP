@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         buttonClearTasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                taskAdapter.clearTasks(); // Kode yang dieksekusi ketika tombol "Clear Task" diklik
+                taskAdapter.clearTasks(); // Kode will execute when "Clear Task" is clicked
             }
         });
 
