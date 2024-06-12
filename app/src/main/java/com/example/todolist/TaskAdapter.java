@@ -61,7 +61,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         notifyDataSetChanged();
     }
 
-    public void removeTask(int position) { // Removes a task from a specific position
+    public void removeTask(int position) { // Removes task from a specific position
         tasks.remove(position);
         notifyItemRemoved(position);
     }
