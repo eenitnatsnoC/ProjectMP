@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter task"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Add Task"
+        android:textColor="#FFFFFF"
+        android:background="#03A9F4"
+        android:layout_below="@id/editTextTask"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddTask"
+        android:layout_above="@id/buttonClearTasks"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/buttonClearTasks"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Clear All"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>
